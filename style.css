@@ -1,0 +1,160 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: white;
+    width: 95%;
+}
+.container{
+    background: linear-gradient(90deg, rgb(67, 255, 205), rgb(143, 162, 255));
+    padding: 50px;
+    margin: 5px;
+    border: none;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+.input-div{
+    color: white;
+    text-align: center;
+ 
+}
+.inp{
+    width: 90%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;    
+}
+
+p{
+    font-size: 10px;
+    color: white;
+} */
+
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a base font size and family */
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Global styles for the page */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.input-div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.inp {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.2s ease;
+}
+
+.inp:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Styling for the temperature converter inputs */
+#cel, #fah, #kel, #ran, #rea {
+    text-align: right;
+}
+
+/* Conversion result style */
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+/* Convert button styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .input-div {
+        text-align: center;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    .result {
+        font-size: 18px;
+    }
+}
